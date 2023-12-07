@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 # Create your views here.
 class get_api(APIView):
     def get(self, request, format=None):
-        if request.GET.get("date"):
-            list_chart = request.GET.get("date").split(sep="-")
+        if request.GET.get("fecha"):
+            list_chart = request.GET.get("fecha").split(sep="-")
             array = [int(i) for i in list_chart]
             day = int(array[0])
             month = int(array[1])

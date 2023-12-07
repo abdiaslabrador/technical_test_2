@@ -17,7 +17,7 @@ El Servicio de Impuestos Internos (SII) de Chile mantiene una tabla con los valo
 Para ayudarte en el desarrollo de este desafío, puedes utilizar la tabla de valores de la Unidad de Fomento actualizados para cada año que se encuentra en el siguiente enlace: https://www.sii.cl/valores_y_fechas/uf/uf2023.htm
 
 # Endpoint
--	GET: Obtiene el valor de unidad de fomento (SII) al pasarle la fecha como parámetro ejemplo: http://127.0.0.1:8000/api/sii/?date=1-08-2022
+-	GET: Obtiene el valor de unidad de fomento (SII) al pasarle la fecha como parámetro ejemplo: http://127.0.0.1:8000/api/sii/?fecha=1-08-2022
 
 ![Sin título2](https://github.com/abdiaslabrador/technical_test_2/assets/44957286/6210cb30-d94f-4a83-93e4-5f7df79001b2)
 
