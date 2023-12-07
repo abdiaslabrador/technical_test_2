@@ -1,0 +1,19 @@
+services:
+  web_migrate: 
+      build:
+        context: .
+      command: python manage.py migrate
+      volumes: 
+        - .:/code
+
+  web: 
+      build:
+        context: .
+      command: python manage.py runserver 0.0.0.0:8000
+      volumes: 
+        - .:/code
+      ports: 
+        - '8000:8000'
+      depends_on:
+      - web_migrate
+  
