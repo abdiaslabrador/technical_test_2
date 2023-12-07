@@ -68,4 +68,7 @@ class get_api(APIView):
                 {"fecha": f"{day}-{month}-{year}", "fomento": fomento}, status=200
             )
         else:
-            return Response("No hay fecha pasada por parametros", status=404)
+            return Response(
+                "No hay fecha pasada por parametros, ejemplo: http://127.0.0.1:8000/api/sii/?fecha=1-08-2022",
+                status=404,
+            )
